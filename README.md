@@ -6,7 +6,7 @@ extremely raw and WIP
 ```bash
 git clone https://github.com/thxlxn/webapp_ai_chatbot.git
 ```
-### Compose the database container
+### Deploy the database
 Make sure to fill the .env file properly before running the command.
 ```bash
 docker-compose --env-file ./chatbot/backend/.env up -d
