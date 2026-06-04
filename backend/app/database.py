@@ -1,8 +1,15 @@
 import psycopg2
 from psycopg2.extras import RealDictCursor
-from config import DB_NAME, DB_USERNAME, DB_PASSWORD, DB_HOST, DB_PORT
+from config import DB_NAME, DB_USERNAME, DB_PASSWORD, DB_HOST, DB_PORT, DATABASE_URL
 
 def get_db_connection():
+
+    if DATABASE_URL:
+        return psycopg2.connect(
+            DATABASE_URL, 
+            cursor_factory=RealDictCursor
+        )
+
     return psycopg2.connect(
         dbname=DB_NAME, 
         user=DB_USERNAME, 
