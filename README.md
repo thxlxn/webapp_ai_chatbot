@@ -29,3 +29,12 @@ DATABASE_URL=postgresql://username:password@your-cloud-host.com:5432/dbname
 ```
 ### Groq API Key
 TODO
+## Running the App
+Simply execute the following command:
+```bash
+npm run dev
+```
+If you prefer having your backend and frontend in separate terminal windows so their logs don't mix, run the following:
+```bash
+.\start.bat
+```
