@@ -49,10 +49,10 @@ If you prefer having your backend and frontend in separate terminal windows so t
 
 ---
 
-## License
-This project is licensed under the GNU General Public License v3.0 license. See [LICENSE](./LICENSE) for details.
+## Note on AI usage
+As a backend-focused developer, I utilized AI tools to help write the frontend layer of this application. While I have reviewed and tested the code to ensure it works properly, frontend devs are more than welcome to submit PRs to improve the UI/UX.
 
 ---
 
-## Note on AI usage
-As a backend-focused developer, I utilized AI tools to help write the frontend layer of this application. While I have reviewed and tested the code to ensure it works properly, frontend devs are more than welcome to submit PRs to improve the UI/UX.
+## License
+This project is licensed under the GNU General Public License v3.0 license. See [LICENSE](./LICENSE) for details.
