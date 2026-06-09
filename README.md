@@ -10,6 +10,7 @@ git clone https://github.com/thxlxn/webapp_ai_chatbot.git
 ```
 ### Database Configuration
 This project supports two ways to connect to PostgreSQL, depending on your preference. <br/>
+**NOTE:** The `.env` file must be created in `backend/`. <br/>
 <br/>
 **Option A: Local Docker (Recommended for Development)**<br/>
 Define the individual variables in the `.env` file:
@@ -22,7 +23,7 @@ DB_PORT=5432
 ```
 Spin up the included `docker-compose.yml` file:
 ```bash
-docker-compose --env-file ./chatbot/backend/.env up -d
+docker-compose --env-file ./backend/.env up -d
 ```
 **Option B: Cloud Database**<br/>
 If you prefer to use a hosted database, you can bypass the Docker container entirely. Simply provide a standard PostgreSQL connection URI in the `.env` file. If this variable is present, the application will automatically use it instead of the local credentials:<br/>
